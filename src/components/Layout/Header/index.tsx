@@ -116,7 +116,7 @@ const Header: React.FC = () => {
                 <path d="M16.6111 15.855C17.591 15.1394 18.3151 14.1979 18.7723 13.1623C16.4824 13.4065 14.1342 12.4631 12.6795 10.4711C11.2248 8.47905 11.0409 5.95516 11.9705 3.84818C10.8449 3.9685 9.72768 4.37162 8.74781 5.08719C5.7759 7.25747 5.12529 11.4308 7.29558 14.4028C9.46586 17.3747 13.6392 18.0253 16.6111 15.855Z" />
               </svg>
             </button>
-            <Link
+            {/* <Link
               href="#"
               className="hidden lg:block btn_outline btn-2 hover-outline-slide-down rounded-lg"
               onClick={() => {
@@ -141,8 +141,34 @@ const Header: React.FC = () => {
                   <Signin signInOpen = {(value:boolean) => setIsSignInOpen(value)} />
                 </div>
               </div>
+            )} */}
+             <Link
+              href="#"
+              className="hidden lg:block btn_outline btn-2 hover-outline-slide-down rounded-lg"
+              onClick={() => {
+                setIsSignInOpen(true);
+              }}
+            >
+              <span className="!py-2 !px-4">Contact Us</span>
+            </Link>
+            {isSignInOpen && (
+              <div
+                ref={signInRef}
+                className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50 !m-0"
+              >
+                <div className="relative mx-auto w-full max-w-md overflow-hidden rounded-lg bg-white px-8 py-14 text-center dark:bg-darklight">
+                <button
+                  onClick={() => setIsSignInOpen(false)}
+                  className=" hover:bg-gray-200 dark:hover:bg-gray-700 p-1 rounded-full absolute -top-5 -right-3 mr-8 mt-8"
+                  aria-label="Close Sign In Modal"
+                >
+                  <Icon icon="ic:round-close" className="text-2xl dark:text-white" />
+                </button>
+                  <Signin signInOpen = {(value:boolean) => setIsSignInOpen(value)} />
+                </div>
+              </div>
             )}
-            <Link
+            {/* <Link
               href="#"
               className="hidden lg:block btn btn-1 hover-filled-slide-down rounded-lg overflow-hidden"
               onClick={() => {
@@ -167,7 +193,7 @@ const Header: React.FC = () => {
                   <SignUp signUpOpen = {(value:boolean) => setIsSignUpOpen(value)} />
                 </div>
               </div>
-            )}
+            )} */}
             <button
               onClick={() => setNavbarOpen(!navbarOpen)}
               className="block lg:hidden p-2 rounded-lg"

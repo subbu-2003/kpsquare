@@ -10,7 +10,7 @@ import Upcoming from '@/components/Home/Upcoming';
 import Testimonials from '@/components/Home/Testimonials';
 import TicketSection from '@/components/Home/TicketSection';
 export const metadata: Metadata = {
-  title: "Symposium",
+  title: "KP SQUARE",
 };
 
 export default function Home() {
@@ -21,8 +21,8 @@ export default function Home() {
       <ThumbnailCarousel/>
        <EventTicket/>
       <WorkSpeakers/>
-      <Upcoming/>
-      <Highlight/>
+      {/* <Upcoming/> */}
+      {/* <Highlight/> */}
       <TicketSection/>
     </main>
   )

@@ -52,8 +52,8 @@ const EventTicket = () => {
   <h3 className="text-blue-500 font-semibold text-xl mt-6">
     MR. NARAYANASAMY ARUNACHALAM
   </h3>
-  <p className="text-gray-800 font-medium">Founder - Chairman</p>
-  <p className="text-gray-800 mb-6">Adyar Students Xerox Private Limited</p>
+  <p className="text-gray-600 font-medium">Founder - Chairman</p>
+  <p className="text-gray-600 mb-6">Adyar Students Xerox Private Limited</p>
 
   {/* BUTTONS */}
   <div className="flex justify-center gap-4 mt-4">
