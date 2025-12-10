@@ -36,15 +36,10 @@ const EventTicket = () => {
     </div>
 
    <p className="text-gray-600 text-base leading-relaxed mb-6 text-justify">
-  Adyar Students Xerox has been a leader in the print services industry
-  for over 30 years in Chennai, Tamil Nadu. As pioneers in print
-  technology, we offer high-quality, affordable printing across 19+ branches
-  in Chennai. Our adaptability to customer needs and numerous industry awards
-  highlights our commitment to excellence.
+  KP Square Publication is a professionally managed document service center dedicated to offering modern, efficient, and high-quality document solutions.
+ We combine advanced technology with expert service to ensure that every document looks its best — clean, clear, vibrant, and professionally finished.
   <br />
-  We also provide state-of-the-art digital printing solutions, ensuring
-  quick turnaround times and superior quality. Choose Adyar Students Xerox for
-  all your print and digital printing needs.
+What started as a small printing center has grown into a trusted document partner for thousands of customers in and around Chennai, especially Anna Nagar, Thirumangalam, Kilpauk, Mogappair, and Aminjikarai.
 </p>
 
 
@@ -52,8 +47,8 @@ const EventTicket = () => {
   <h3 className="text-blue-500 font-semibold text-xl mt-6">
     MR. NARAYANASAMY ARUNACHALAM
   </h3>
-  <p className="text-gray-600 font-medium">Founder - Chairman</p>
-  <p className="text-gray-600 mb-6">Adyar Students Xerox Private Limited</p>
+  <p className="text-gray-600 font-medium">Founder</p>
+  <p className="text-gray-600 mb-6">KP Square Publication</p>
 
   {/* BUTTONS */}
   <div className="flex justify-center gap-4 mt-4">
