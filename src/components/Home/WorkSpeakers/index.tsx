@@ -17,35 +17,35 @@ const WorkSpeakers = ({ showTitle = true }) => {
 
     {/* Card 1 */}
     <div className="bg-white rounded-xl shadow-md p-8 text-center hover:shadow-lg transition">
-      <Image src="/images/icons/branches.png" alt="Branches" width={60} height={60} className="mx-auto mb-4" />
+      <Image src="/icons/branch.png" alt="Branches" width={60} height={60} className="mx-auto mb-4" />
       <h3 className="text-4xl font-bold text-blue-900">20+</h3>
       <p className="text-gray-600 mt-2">Branches in Chennai</p>
     </div>
 
     {/* Card 2 */}
     <div className="bg-white rounded-xl shadow-md p-8 text-center hover:shadow-lg transition">
-      <Image src="/images/icons/revenue.png" alt="Revenue" width={60} height={60} className="mx-auto mb-4" />
+      <Image src="/icons/revenue.png" alt="Revenue" width={60} height={60} className="mx-auto mb-4" />
       <h3 className="text-4xl font-bold text-blue-900">$12m+</h3>
       <p className="text-gray-600 mt-2">Annual Revenue Growth</p>
     </div>
 
     {/* Card 3 */}
     <div className="bg-white rounded-xl shadow-md p-8 text-center hover:shadow-lg transition">
-      <Image src="/images/icons/customers.png" alt="Customers" width={60} height={60} className="mx-auto mb-4" />
+      <Image src="/icons/customer.png" alt="Customers" width={60} height={60} className="mx-auto mb-4" />
       <h3 className="text-4xl font-bold text-blue-900">15k+</h3>
       <p className="text-gray-600 mt-2">Happy Customers</p>
     </div>
 
     {/* Card 4 */}
     <div className="bg-white rounded-xl shadow-md p-8 text-center hover:shadow-lg transition">
-      <Image src="/images/icons/visitors.png" alt="Visitors" width={60} height={60} className="mx-auto mb-4" />
+      <Image src="/icons/visitor.png" alt="Visitors" width={60} height={60} className="mx-auto mb-4" />
       <h3 className="text-4xl font-bold text-blue-900">20k+</h3>
       <p className="text-gray-600 mt-2">Daily Website Visitors</p>
     </div>
 
     {/* Card 5 */}
     <div className="bg-white rounded-xl shadow-md p-8 text-center hover:shadow-lg transition">
-      <Image src="/images/icons/google.png" alt="Google Reviews" width={60} height={60} className="mx-auto mb-4" />
+      <Image src="/icons/review.png" alt="Google Reviews" width={60} height={60} className="mx-auto mb-4" />
       <h3 className="text-4xl font-bold text-blue-900">4k+</h3>
       <p className="text-gray-600 mt-2">Google Review</p>
     </div>

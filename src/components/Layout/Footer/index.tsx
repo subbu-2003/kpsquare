@@ -117,7 +117,7 @@ const Footer: FC = () => {
     <li>
       <Link href="https://www.threads.com/@kpsquarepublication" className="group">
         <img 
-          src="/icons/threads.png" 
+          src="/icons/thread.png" 
           alt="Threads" 
           className="w-9 h-9 group-hover:opacity-70"
         />

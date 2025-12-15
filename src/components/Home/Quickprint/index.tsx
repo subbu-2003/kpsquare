@@ -8,28 +8,28 @@ const QuickPicks = () => {
       badgeColor: "bg-orange-500",
       title: "A4 Printouts",
       desc: "a4 print outs with corner stapling finishing",
-      img: "/images/quickpicks/close-up-butterfly-glass-dome.jpg",
+      img: "/images/quickpicks/1.jpg",
     },
     {
       badge: "PLAN PRINTING",
       badgeColor: "bg-blue-500",
       title: "Plan Print Outs",
       desc: "Engineering prints, large format prints: A0, A1, A2",
-      img: "/images/quickpicks/close-up-butterfly-glass-dome.jpg",
+      img: "/images/quickpicks/2.jpg",
     },
     {
       badge: "SPIRAL BINDING",
       badgeColor: "bg-pink-600",
       title: "Spiral Binding (A4)",
       desc: "a4 print outs with spiral binding",
-      img: "/images/quickpicks/close-up-butterfly-glass-dome.jpg",
+      img: "/images/quickpicks/3.jpg",
     },
     {
       badge: "BUSINESS CARDS",
       badgeColor: "bg-yellow-600",
       title: "Business Cards",
       desc: "Business Cards for standard printing. Marketing Material",
-      img: "/images/quickpicks/close-up-butterfly-glass-dome.jpg",
+      img: "/images/quickpicks/4.jpg",
     },
   ];
 

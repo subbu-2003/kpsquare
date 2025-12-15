@@ -16,35 +16,35 @@ const Conferences = () => {
       title: "A5 Notepad (Pack Of 8)",
       desc: "papesaur A5 Notepads, 90 Pages Unruled, 100 GSM Paper Quality.",
       price: "₹799 / Page",
-      image: "/images/products/35 CHRISTMAS.jpg",
+      image: "/images/quickpicks/3.jpg",
     },
     {
       id: 2,
       title: "A4 Black Photo Frame",
       desc: "Ideal way to frame your favourite photos (A4, Black).",
       price: "₹499 / 1",
-      image: "/images/products/35 CHRISTMAS.jpg",
+      image: "/images/quickpicks/2.jpg",
     },
     {
       id: 3,
       title: "Black 12×18 Size Photo Frame",
       desc: "Perfect for displaying your cherished memories.",
       price: "₹799 / 1",
-      image: "/images/products/35 CHRISTMAS.jpg",
+      image: "/images/quickpicks/3.jpg",
     },
     {
       id: 4,
       title: "Premium A4 Notepads",
       desc: "Smooth 100 GSM paper with 90 unruled pages. (Pack of 4)",
       price: "₹699 / pages",
-      image: "/images/products/35 CHRISTMAS.jpg",
+      image: "/images/quickpicks/4.jpg",
     },
      {
       id: 5,
       title: "Premium A4 Notepads",
       desc: "Smooth 100 GSM paper with 90 unruled pages. (Pack of 4)",
       price: "₹699 / pages",
-      image: "/images/products/35 CHRISTMAS.jpg",
+      image: "/images/quickpicks/4.jpg",
     }
   ];
 

@@ -31,7 +31,7 @@ const EventTicket = () => {
   <div className="lg:col-span-2">
      <div className="text-center mb-12">
       <h2 className="text-4xl font-bold">
-        Our <span className="text-blue-500">Achievements</span> in Nutshell
+        Our <span className="text-blue-500">Achievements</span>
       </h2>
     </div>
 
