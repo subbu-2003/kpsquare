@@ -25,7 +25,7 @@ const Page = () => {
 
       <Paymentpolicy />
 
-      <TicketSection />
+      
     </>
   );
 };

@@ -24,7 +24,7 @@ const Page = () => {
 
       <Privacy />
 
-      <TicketSection />
+    
     </>
   );
 };

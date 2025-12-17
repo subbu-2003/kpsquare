@@ -24,7 +24,6 @@ const Page = () => {
 
       <Terms />
 
-      <TicketSection />
     </>
   );
 };

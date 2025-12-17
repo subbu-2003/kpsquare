@@ -22,7 +22,6 @@ const page = () => {
       />
       <WorkSpeakers showTitle={false} />
       <Testimonials/>
-      <TicketSection/>
     </>
   );
 };

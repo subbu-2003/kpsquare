@@ -26,7 +26,7 @@ const Page = () => {
 
       <Deliverypolicy />
 
-      <TicketSection />
+      
     </>
   );
 };

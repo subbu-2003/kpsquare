@@ -31,7 +31,7 @@ const page = () => {
       </section>      
       <div>
         <Testimonials />
-        <TicketSection/>
+
       </div>
     </>
   );
