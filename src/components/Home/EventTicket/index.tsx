@@ -45,7 +45,7 @@ What started as a small printing center has grown into a trusted document partne
 
  <div className="text-center">
   <h3 className="text-blue-500 font-semibold text-xl mt-6">
-    MR. NARAYANASAMY ARUNACHALAM
+    KP Square Publication
   </h3>
   <p className="text-gray-600 font-medium">Founder</p>
   <p className="text-gray-600 mb-6">KP Square Publication</p>

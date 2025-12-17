@@ -20,7 +20,6 @@ const BlogPage = () => {
                 breadcrumbLinks={breadcrumbLinks}
             />
             <BlogList />
-            <TicketSection/>
         </>
     );
 };

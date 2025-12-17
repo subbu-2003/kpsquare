@@ -18,7 +18,7 @@ const Footer: FC = () => {
                                 alt="Logo"
                                 width={50}
                                 height={60}
-                                className="w-16 dark:block hidden"
+                                className="w-16"
                             />
                         </Link>
                         <p className="text-PaleCerulean mt-4 text-base">
@@ -141,9 +141,35 @@ const Footer: FC = () => {
                 </div>
 
                 {/* Bottom Section */}
-                <div className="pt-6 text-center text-PaleCerulean">
-                    © {new Date().getFullYear()} All rights reserved.
-                </div>
+<div className=" mt-5 pt-6">
+  <div className="container mx-auto px-4">
+    <div className="flex flex-col md:flex-row justify-between items-center gap-3 text-sm">
+
+      {/* Left */}
+      <p className="text-PaleCerulean text-center md:text-left">
+        © {new Date().getFullYear()}{" "}
+        <span className="font-semibold text-white">KP Square</span>{" "}
+        All Rights Reserved
+      </p>
+
+      {/* Right */}
+      <p className="flex items-center gap-1 text-PaleCerulean text-center">
+        Made with
+        <span className="text-red-500">❤️</span>
+        by
+        <Link
+          href="https://e2o.in/"
+          target="_blank"
+          className="font-semibold text-primary hover:underline"
+        >
+          E2o Tech
+        </Link>
+      </p>
+
+    </div>
+  </div>
+</div>
+
 
             </div>
         </footer>

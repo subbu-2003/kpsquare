@@ -23,7 +23,7 @@ export default function Home() {
       <WorkSpeakers/>
       {/* <Upcoming/> */}
       {/* <Highlight/> */}
-      <TicketSection/>
+  
     </main>
   )
 }

@@ -21,7 +21,7 @@ const Services = () => {
       {/* 1. PRINTING SERVICES */}
       <div className="bg-dark dark:bg-dark shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
         <img
-          src="/images/services/printing_service.jpg"
+          src="/images/services/printing_service.webp"
           alt="Printing Services"
           className="rounded-xl mb-5 w-full h-56 object-cover"
         />
@@ -54,7 +54,7 @@ const Services = () => {
       {/* 2. XEROX SERVICES */}
       <div className="bg-dark dark:bg-dark shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
         <img
-          src="/images/services/xerox.jpg"
+          src="/images/services/xerox.webp"
           alt="Xerox Services"
           className="rounded-xl mb-5 w-full h-56 object-cover"
         />
@@ -85,7 +85,7 @@ const Services = () => {
       {/* 3. SCANNING SERVICES */}
       <div className="bg-dark dark:bg-dark shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
         <img
-          src="/images/services/scanning.jpg"
+          src="/images/services/scanning.webp"
           alt="Scanning Services"
           className="rounded-xl mb-5 w-full h-56 object-cover"
         />
@@ -115,7 +115,7 @@ const Services = () => {
       {/* 4. BINDING SERVICES */}
       <div className="bg-dark dark:bg-dark shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
         <img
-          src="/images/services/binding.jpg"
+          src="/images/services/binding.webp"
           alt="Binding Services"
           className="rounded-xl mb-5 w-full h-56 object-cover"
         />

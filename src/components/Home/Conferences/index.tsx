@@ -16,35 +16,35 @@ const Conferences = () => {
       title: "A5 Notepad (Pack Of 8)",
       desc: "papesaur A5 Notepads, 90 Pages Unruled, 100 GSM Paper Quality.",
       price: "₹799 / Page",
-      image: "/images/quickpicks/3.jpg",
+      image: "/images/quickpicks/a5.webp",
     },
     {
       id: 2,
       title: "A4 Black Photo Frame",
       desc: "Ideal way to frame your favourite photos (A4, Black).",
       price: "₹499 / 1",
-      image: "/images/quickpicks/2.jpg",
+      image: "/images/quickpicks/a4frame.webp",
     },
     {
       id: 3,
       title: "Black 12×18 Size Photo Frame",
       desc: "Perfect for displaying your cherished memories.",
       price: "₹799 / 1",
-      image: "/images/quickpicks/3.jpg",
+      image: "/images/quickpicks/blackphoto.webp",
     },
     {
       id: 4,
       title: "Premium A4 Notepads",
       desc: "Smooth 100 GSM paper with 90 unruled pages. (Pack of 4)",
       price: "₹699 / pages",
-      image: "/images/quickpicks/4.jpg",
+      image: "/images/quickpicks/a4frame.webp",
     },
      {
       id: 5,
-      title: "Premium A4 Notepads",
+      title: "Color Photo Frame",
       desc: "Smooth 100 GSM paper with 90 unruled pages. (Pack of 4)",
       price: "₹699 / pages",
-      image: "/images/quickpicks/4.jpg",
+      image: "/images/quickpicks/colorframe.webp",
     }
   ];
 
@@ -85,7 +85,7 @@ const Conferences = () => {
       />
     </div>
 
-    <h4 className="text-xl font-semibold mt-4">{item.title}</h4>
+    <h4 className="text-xl font-semibold mt-4 text-black">{item.title}</h4>
     <p className="text-gray-500 text-sm mt-2 h-12">{item.desc}</p>
 
     <div className="flex justify-between items-center mt-5">
