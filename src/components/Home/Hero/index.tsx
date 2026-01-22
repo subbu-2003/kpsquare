@@ -37,9 +37,12 @@ const Hero = () => {
                 <div className="w-full md:w-1/3 flex items-center justify-center">
                     <div className="bg-transparent backdrop-blur-lg shadow-md rounded-2xl px-10 py-8 text-start w-full md:w-auto">
                         <h2 className="text-2xl font-semibold mb-2">Print Quick</h2>
-                        <button className="text-xl mt-3 flex items-center gap-2 justify-center">
-                            →
-                        </button>
+                     <button
+  className="text-xl mt-3 flex items-center gap-2 justify-center"
+  onClick={() => window.location.href = "/printpage"}
+>
+  →
+</button>
                     </div>
                 </div>
 
@@ -61,9 +64,12 @@ const Hero = () => {
                 <div className="w-full md:w-1/3 flex items-center justify-center">
                     <div className="bg-transparent backdrop-blur-lg shadow-md rounded-2xl px-10 py-8 text-start w-full md:w-auto">
                         <h2 className="text-2xl font-semibold mb-2">Print Quick</h2>
-                        <button className="text-xl mt-3 flex items-center gap-2 justify-center">
-                            →
-                        </button>
+                      <button
+  className="text-xl mt-3 flex items-center gap-2 justify-center"
+  onClick={() => window.location.href = "/printpage"}
+>
+  →
+</button>
                     </div>
                 </div>
 

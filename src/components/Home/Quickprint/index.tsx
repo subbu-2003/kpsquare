@@ -78,7 +78,7 @@ const QuickPicks = () => {
         {/* Button fixed at bottom */}
         <button
           className="w-full mt-4 bg-sky-500 text-white py-3 rounded-lg font-medium 
-                     flex items-center justify-center gap-2 hover:bg-sky-600 transition"
+                     flex items-center justify-center gap-2 hover:bg-sky-600 transition"  onClick={() => window.location.href = "/printpage"}
         >
           <i className="bi bi-printer"></i> Print Now
         </button>
