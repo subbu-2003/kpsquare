@@ -12,9 +12,14 @@ const Printpage = () => {
   const [pageCount, setPageCount] = useState(1);
   const [bindingType, setBindingType] = useState("");
   const [openBinding, setOpenBinding] = useState(true);
-const [bindingColor, setBindingColor] = useState("Blue");
 const [coverPage, setCoverPage] = useState("No Cover Page");
 const [bindingOrientation, setBindingOrientation] = useState("Portrait");
+const [bindingColor, setBindingColor] = useState("");
+const [customColor, setCustomColor] = useState("");
+
+const finalBindingColor =
+  bindingColor === "Other" ? customColor : bindingColor;
+
 
 const handleSendWhatsApp = () => {
   const message = `
@@ -248,21 +253,41 @@ const bindingOptions = [
           Additional Info for Binding
         </h3>
 
-        <div>
-          <label className="text-sm dark:text-white">
-            Choose color for cotton board
-          </label>
-          <select
-  value={bindingColor}
-  onChange={(e) => setBindingColor(e.target.value)}
-  className="mt-1 w-full rounded-lg border px-4 py-2"
->
-  <option>Blue</option>
-  <option>Black</option>
-  <option>Brown</option>
-</select>
+       <div>
+  <label className="text-sm dark:text-white">
+    Choose color for cotton board
+  </label>
 
-        </div>
+  <select
+    value={bindingColor}
+    onChange={(e) => {
+      setBindingColor(e.target.value);
+      if (e.target.value !== "Other") {
+        setCustomColor("");
+      }
+    }}
+    className="mt-1 w-full rounded-lg border px-4 py-2"
+  >
+    <option value="">Select color</option>
+    <option value="Blue">Blue</option>
+    <option value="Black">Black</option>
+    <option value="Brown">Brown</option>
+    <option value="Other">Other (Custom)</option>
+  </select>
+
+  {/* Custom Color Input */}
+  {bindingColor === "Other" && (
+    <input
+      type="text"
+      placeholder="Enter your color"
+      value={customColor}
+      onChange={(e) => setCustomColor(e.target.value)}
+      className="mt-3 w-full rounded-lg border px-4 py-2
+                 dark:bg-darkmode dark:text-white"
+    />
+  )}
+</div>
+
 
         <div>
           <label className="text-sm dark:text-white">
@@ -326,7 +351,7 @@ const bindingOptions = [
   <p className="font-semibold dark:text-white mb-2">
     Binding Specifications
   </p>
-  <p>{bindingColor || "Blue"}</p>
+  <p>{finalBindingColor  || "Blue"}</p>
   <p>{bindingType || "Not selected"}</p>
   <p>{coverPage || "No Cover Page"}</p>
   <p>{bindingOrientation || "Portrait"}</p>
