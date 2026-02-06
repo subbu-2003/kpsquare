@@ -11,47 +11,57 @@ import "swiper/css/autoplay";
 
 const Conferences = () => {
   const products = [
-    {
-      id: 1,
-      title: "A5 Notepad (Pack Of 8)",
-      desc: "papesaur A5 Notepads, 90 Pages Unruled, 100 GSM Paper Quality.",
-      price: "₹799 / Page",
-      image: "/images/quickpicks/a5.webp",
-    },
-    {
-      id: 2,
-      title: "A4 Black Photo Frame",
-      desc: "Ideal way to frame your favourite photos (A4, Black).",
-      price: "₹499 / 1",
-      image: "/images/quickpicks/a4frame.webp",
-    },
-    {
-      id: 3,
-      title: "Black 12×18 Size Photo Frame",
-      desc: "Perfect for displaying your cherished memories.",
-      price: "₹799 / 1",
-      image: "/images/quickpicks/blackphoto.webp",
-    },
-    {
-      id: 4,
-      title: "Premium A4 Notepads",
-      desc: "Smooth 100 GSM paper with 90 unruled pages. (Pack of 4)",
-      price: "₹699 / pages",
-      image: "/images/quickpicks/a4frame.webp",
-    },
-     {
-      id: 5,
-      title: "Color Photo Frame",
-      desc: "Smooth 100 GSM paper with 90 unruled pages. (Pack of 4)",
-      price: "₹699 / pages",
-      image: "/images/quickpicks/colorframe.webp",
-    }
-  ];
+  {
+    id: 1,
+    title: "Designing",
+    desc: "Adyar Students Xerox offers top-notch printing, photocopying, and in-house design services. Our expert team transforms ideas into professional designs with precision and creativity.",
+    image: "/images/services/Designing.jpg",
+  },
+  {
+    id: 2,
+    title: "Rexine Hard Binding and Gold Embossing",
+    desc: "Premium rexine hard binding services combining a glossy finish with luxurious gold embossing, creating books that are both elegant and durable.",
+    image: "/images/services/Hard Binding and Gold.jpg",
+  },
+  {
+    id: 3,
+    title: "Hard Binding Matt Lamination",
+    desc: "Professional and durable hard binding combined with matt lamination, offering a refined finish and long-lasting protection for your documents.",
+    image: "/images/services/Hard Binding Matt Lamination.avif",
+  },
+  {
+    id: 4,
+    title: "Metal Spiral Binding",
+    desc: "High-quality metal spiral binding designed to enhance both functionality and appearance, ideal for reports, manuals, and notebooks.",
+    image: "/images/services/Metal Spiral Binding.avif",
+  },
+  {
+    id: 5,
+    title: "Hard Binding Gloss Lamination",
+    desc: "Exceptional hard binding with gloss lamination that ensures your books look professional while providing superior protection and shine.",
+    image: "/images/services/Hard Binding Gloss Lamination.avif",
+  },
+  {
+    id: 6,
+    title: "Wire-O Binding",
+    desc: "A sleek and durable binding solution commonly used for presentations and submissions, offering easy page turning and a polished look.",
+    image: "/images/services/Wire-O Binding.avif",
+  },
+  {
+    id: 7,
+    title: "Hard Binding",
+    desc: "A classic hard binding solution for long-lasting documents, providing strength, protection, and a professional appearance.",
+    image: "/images/services/Hard Binding.jpg",
+  },
+];
 
   return (
     <section className="bg-IcyBreeze dark:bg-darklight relative overflow-hidden before:absolute before:content-[''] before:bg-PaleSkyBlu before:dark:bg-secondary before:w-687 before:h-687 before:-bottom-1/2 before:rounded-full before:xl:inline-block before:hidden">
       <div className="text-center mb-10">
-        <h2 className="text-3xl font-bold text-gray-800">Best Seller</h2>
+        <h2 className="text-4xl font-bold text-center mb-10">
+    Best <span className="text-sky-500">Selling</span>
+  </h2>
+
       </div>
 
       <div className="relative px-10">
@@ -73,32 +83,48 @@ const Conferences = () => {
           }}
         >
           {products.map((item) => (
-         <SwiperSlide key={item.id}>
-  <div className="bg-white rounded-xl shadow-md p-5 hover:shadow-lg transition-shadow duration-300">
-    <div className="w-full flex items-center justify-center">
+      <SwiperSlide key={item.id}>
+  <div
+    className="bg-white rounded-2xl shadow-md
+               hover:shadow-xl transition-all duration-300
+               h-[500px] flex flex-col overflow-hidden"
+  >
+    {/* Image Section */}
+    <div className="relative w-full h-[360px] bg-gray-50 flex items-center justify-center">
       <Image
         src={item.image}
         alt={item.title}
-        width={300}
-        height={250}
-        className="object-contain rounded-lg"
+        fill
+        className="object-contain p-6"
+        priority
       />
     </div>
 
-    <h4 className="text-xl font-semibold mt-4 text-black">{item.title}</h4>
-    <p className="text-gray-500 text-sm mt-2 h-12">{item.desc}</p>
+    {/* Content Section */}
+    <div className="flex-1 flex flex-col p-5">
+      <h4 className="text-lg font-semibold text-gray-900">
+        {item.title}
+      </h4>
 
-    <div className="flex justify-between items-center mt-5">
-      <button className="bg-blue-500 text-white px-5 py-2 rounded-md flex items-center gap-2 hover:bg-blue-600 transition">
-        <i className="fa fa-shopping-cart"></i> Buy Now
-      </button>
+      <p className="text-gray-500 text-sm mt-2 line-clamp-2 leading-relaxed">
+        {item.desc}
+      </p>
 
-      <span className="text-blue-500 font-semibold">
-        {item.price}
-      </span>
+      {/* CTA */}
+      <div className="mt-auto pt-5">
+        <button
+          className="w-full bg-blue-500 text-white py-3 rounded-lg
+                     font-medium text-sm
+                     hover:bg-blue-600 transition"
+        >
+          Bind Now
+        </button>
+      </div>
     </div>
   </div>
 </SwiperSlide>
+
+
 
           ))}
         </Swiper>
